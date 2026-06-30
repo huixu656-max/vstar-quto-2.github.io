@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Port Logistics Tracking | V-Star Auto</title>
+    <meta
+      name="description"
+      content="Track V-Star Auto vehicle export logistics by freight order, booking, bill of lading, or container reference."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="port-logistics">
+    <header class="site-header solid" data-header>
+      <a class="brand" href="index.html" aria-label="V-Star Auto home"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">V-Star Auto</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a><a href="vehicles.html">Vehicles</a><a href="services.html">Export Services</a><a href="port-logistics.html">Port Logistics</a><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <img src="assets/img/map-ports.jpg" alt="Fujian port logistics route map" loading="eager" decoding="async" fetchpriority="high" />
+        <div>
+          <p class="eyebrow">Port logistics</p>
+          <h1>Track vehicle export handover and port movement status.</h1>
+          <p>Enter a V-Star freight order, booking, bill of lading, or container reference to review the latest logistics checkpoint.</p>
+        </div>
+      </section>
+
+      <section class="section logistics-query-section">
+        <div class="section-heading spread">
+          <div>
+            <p class="eyebrow">Logistics tracking</p>
+            <h2>Port logistics information lookup</h2>
+          </div>
+          <p>
+            This demo query area is structured like ocean-carrier tracking tools. It can later connect to real carrier,
+            freight forwarder, or internal V-Star order data.
+          </p>
+        </div>
+
+        <div class="logistics-layout">
+          <section class="logistics-panel" aria-labelledby="tracking-title">
+            <div class="panel-heading">
+              <p class="eyebrow">Freight order lookup</p>
+              <h3 id="tracking-title">Enter tracking reference</h3>
+            </div>
+            <form class="tracking-form" data-logistics-form>
+              <label for="tracking-number">Freight order / Booking / B/L / Container No.</label>
+              <div class="tracking-input-row">
+                <input
+                  id="tracking-number"
+                  name="trackingNumber"
+                  type="text"
+                  placeholder="Example: VST-JY-202605-001"
+                  autocomplete="off"
+                  data-logistics-input
+                />
+                <button class="button button-dark" type="submit">Track</button>
+              </div>
+              <button class="text-link tracking-demo-button" type="button" data-logistics-demo>Use demo tracking number</button>
+            </form>
+
+            <div class="tracking-result" data-logistics-result aria-live="polite">
+              <p class="empty-note">Enter a reference number to check the latest port logistics status.</p>
+            </div>
+          </section>
+
+          <aside class="logistics-reference">
+            <p class="eyebrow">Accepted references</p>
+            <h3>Common logistics numbers</h3>
+            <dl>
+              <dt>V-Star freight order</dt>
+              <dd>Internal order number shared after payment or shipment confirmation.</dd>
+              <dt>Booking number</dt>
+              <dd>Carrier or forwarder booking reference for planned vessel space.</dd>
+              <dt>Bill of lading</dt>
+              <dd>Shipping document reference used after cargo is accepted for shipment.</dd>
+              <dt>Container number</dt>
+              <dd>Equipment number used after container allocation or loading confirmation.</dd>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-tight muted-band">
+        <div class="section-heading">
+          <p class="eyebrow">What buyers can verify</p>
+          <h2>Each logistics query should answer a practical order question.</h2>
+        </div>
+        <div class="port-status-grid">
+          <article><span>01</span><h3>Vehicle handover</h3><p>Whether the vehicle has left the supplier yard or V-Star inspection point.</p></article>
+          <article><span>02</span><h3>Document status</h3><p>Whether invoice, packing list, customs material, and booking information are ready.</p></article>
+          <article><span>03</span><h3>Port checkpoint</h3><p>Gate-in, customs declaration, loading plan, or release status at the agreed port.</p></article>
+          <article><span>04</span><h3>Vessel milestone</h3><p>Planned ETD, actual departure, transshipment, destination ETA, and follow-up notes.</p></article>
+        </div>
+      </section>
+
+      <section class="split-section">
+        <div class="split-media"><img src="assets/img/customs-doc.jpg" alt="Export logistics document review" loading="lazy" decoding="async" /></div>
+        <div class="split-copy">
+          <p class="eyebrow">Data scope</p>
+          <h2>Designed for export orders before a full logistics API is connected.</h2>
+          <p>
+            The page first works as a professional tracking interface for V-Star order updates. When a real shipment is
+            confirmed, the same page can link carrier tracking, container events, and internal order notes.
+          </p>
+          <a class="button button-dark" href="contact.html">Confirm shipment reference</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>V-Star Auto</strong><p>Fujian Rontai V-Star Automobile Industry Co., Ltd.</p></div>
+      <div><a href="vehicles.html">Vehicles</a><a href="services.html">Export Services</a><a href="port-logistics.html">Port Logistics</a><a href="contact.html">Contact</a></div>
+      <p>&copy; 2026 V-Star Auto. All rights reserved.</p>
+    </footer>
+    <a class="float-whatsapp" href="https://wa.me/8613852965434" aria-label="Contact V-Star Auto on WhatsApp">WA</a>
+    <script src="assets/js/content-defaults.js"></script>
+    <script src="assets/js/content-overrides.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+

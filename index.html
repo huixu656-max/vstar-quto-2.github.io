@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V-Star Auto | Certified Chinese Vehicle Export Partner</title>
+    <meta
+      name="description"
+      content="V-Star Auto provides certified Chinese vehicle export services with verified company, manufacturer, WMI, and quality credentials, physical bases, and direct access to global vehicle supply."
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="V-Star Auto home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">V-Star Auto</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="services.html">Export Services</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a class="nav-cta" href="contact.html">Send Inquiry</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-home" aria-label="Certified Chinese vehicle export partner">
+        <div class="hero-slide is-active">
+          <picture>
+            <source media="(max-width: 680px)" srcset="assets/img/admin/pages/home-hero-slides-0-mobile.jpg" />
+            <img
+              src="assets/img/admin/pages/home-hero-slides-0.jpg"
+              alt="V-Star Auto homepage banner" loading="eager" decoding="async" fetchpriority="high" />
+          </picture>
+        </div>
+        <div class="hero-slide">
+          <picture>
+            <source media="(max-width: 680px)" srcset="assets/img/admin/pages/home-hero-slides-1-mobile.jpg" />
+            <img
+              src="assets/img/admin/pages/home-hero-slides-1.jpg"
+              alt="V-Star Auto homepage banner" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="hero-slide">
+          <picture>
+            <source media="(max-width: 680px)" srcset="assets/img/admin/pages/home-hero-slides-2-mobile.png" />
+            <img
+              src="assets/img/admin/pages/home-hero-slides-2.png"
+              alt="V-Star Auto homepage banner" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="hero-slide">
+          <picture>
+            <source media="(max-width: 680px)" srcset="assets/img/admin/pages/home-hero-slides-3-mobile.jpg" />
+            <img
+              src="assets/img/admin/pages/home-hero-slides-3.jpg"
+              alt="V-Star Auto international delegation visit" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="hero-overlay"></div>
+        <button class="hero-nav-button hero-nav-prev" type="button" data-hero-prev aria-label="Previous homepage banner">
+          <span aria-hidden="true">&lsaquo;</span>
+        </button>
+        <button class="hero-nav-button hero-nav-next" type="button" data-hero-next aria-label="Next homepage banner">
+          <span aria-hidden="true">&rsaquo;</span>
+        </button>
+        <div class="hero-content">
+          <p class="eyebrow">Verified credentials. Port-side delivery.</p>
+          <h1><span>Certified Chinese</span> <span>Vehicle Export</span> <span>Partner</span></h1>
+          <p>
+            Two bases, verified credentials, and direct vehicle supply.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-light" href="contact.html">Send Inquiry</a>
+            <a class="button button-ghost" href="vehicles.html">Explore Vehicles</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading spread">
+          <div>
+            <p class="eyebrow" data-home-vehicle-eyebrow>Vehicle center</p>
+            <h2 data-home-vehicle-title>Curated Chinese vehicle models for export.</h2>
+          </div>
+          <a class="button button-dark" href="vehicles.html" data-home-vehicle-cta>Explore Vehicles</a>
+        </div>
+        <div class="vehicle-carousel" data-home-vehicle-carousel>
+          <button class="vehicle-carousel-button vehicle-carousel-prev" type="button" aria-label="Previous vehicle models" data-home-vehicle-prev><span aria-hidden="true">&lsaquo;</span></button>
+          <div class="vehicle-preview" data-home-vehicle-cards aria-live="polite">
+            <a class="vehicle-preview-card" href="vehicle-detail.html?model=toyota-corolla-2026-premium" aria-label="View Toyota Corolla 2026 Premium details">
+              <img
+                src="assets/img/vehicles/home-toyota-corolla-exterior.jpg"
+                alt="Toyota Corolla 2026 Premium hybrid sedan" loading="lazy" decoding="async" />
+              <div>
+                <p class="eyebrow">Hybrid sedan</p>
+                <h3>Toyota Corolla 2026 Premium</h3>
+                <p>Hybrid compact sedan reference for family, business, and dealer-stock export inquiries.</p>
+                <span>View details</span>
+              </div>
+            </a>
+            <a class="vehicle-preview-card" href="vehicle-detail.html?model=mazda-ez-60-600-max" aria-label="View Mazda EZ-60 600 Max details">
+              <img
+                src="assets/img/vehicles/home-mazda-ez-60-exterior.jpg"
+                alt="Mazda EZ-60 600 Max electric SUV" loading="lazy" decoding="async" />
+              <div>
+                <p class="eyebrow">Electric SUV</p>
+                <h3>Mazda EZ-60 600 Max</h3>
+                <p>Pure electric SUV option for buyers comparing comfort, range, and new-energy supply.</p>
+                <span>View details</span>
+              </div>
+            </a>
+            <a class="vehicle-preview-card" href="vehicle-detail.html?model=changan-hunter-warrior-1031km" aria-label="View Changan Hunter Warrior 1031km details">
+              <img src="assets/img/vehicles/home-changan-hunter-exterior.jpg" alt="Changan Hunter Warrior 1031km EREV pickup" loading="lazy" decoding="async" />
+              <div>
+                <p class="eyebrow">EREV pickup</p>
+                <h3>Changan Hunter Warrior 1031km</h3>
+                <p>Extended-range pickup reference for utility, outdoor, and fleet-market sourcing discussions.</p>
+                <span>View details</span>
+              </div>
+            </a>
+          </div>
+          <button class="vehicle-carousel-button vehicle-carousel-next" type="button" aria-label="Next vehicle models" data-home-vehicle-next><span aria-hidden="true">&rsaquo;</span></button>
+        </div>
+      </section>
+
+      <section class="split-section dark-band" id="location">
+        <div class="split-media">
+          <div class="interactive-port-map home-port-map" data-fujian-port-map aria-label="Interactive map showing V-Star Minhou base and nearby Jiangyin, Pingtan, and Xiamen port routes">
+            <img class="map-fallback-image" src="assets/img/map-ports.jpg" alt="Fujian port route map fallback" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="split-copy">
+          <p class="eyebrow">Location advantage</p>
+          <h2>Close to Jiangyin, Xiamen, and Pingtan ports.</h2>
+          <p>
+            Bases in Minhou and Pingtan reduce inland transfer time, support faster vehicle dispatch, and help control
+            logistics cost for overseas buyers.
+          </p>
+          <div class="map-actions">
+            <a class="button button-light" href="https://www.google.com/maps/search/?api=1&query=%E7%A6%8F%E5%BB%BA%E7%9C%81%E7%A6%8F%E5%B7%9E%E5%B8%82%E9%97%BD%E4%BE%AF%E5%8E%BF%E5%B0%9A%E5%B9%B2%E9%95%87%E8%89%AF%E5%AE%89%E8%B7%AF20%E5%8F%B7" target="_blank" rel="noopener">Open Google Maps</a>
+            <a class="button button-ghost" href="https://uri.amap.com/search?keyword=%E7%A6%8F%E5%BB%BA%E7%9C%81%E7%A6%8F%E5%B7%9E%E5%B8%82%E9%97%BD%E4%BE%AF%E5%8E%BF%E5%B0%9A%E5%B9%B2%E9%95%87%E8%89%AF%E5%AE%89%E8%B7%AF20%E5%8F%B7&city=%E7%A6%8F%E5%B7%9E&src=vstar-auto&callnative=0" target="_blank" rel="noopener">Open Amap</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="credentials">
+        <div class="section-heading">
+          <p class="eyebrow">Compliance first</p>
+          <h2>Official credentials organized in one review area.</h2>
+          <p>
+            V-Star Auto's import and export license, company registration, manufacturer code, WMI code, and quality
+            management certificate are grouped here so overseas buyers can review the main compliance documents without
+            repeated pages.
+          </p>
+        </div>
+        <div class="credential-grid">
+          <button class="credential-card" type="button" data-modal-image="assets/img/credentials/automobile-import-export-license.jpg">
+            <span>01</span>
+            <img src="assets/img/credentials/automobile-import-export-license.jpg" alt="Automobile import and export license" loading="lazy" decoding="async" />
+            <h3>Automobile Import and Export License</h3>
+            <p>MIIT automobile import and export license reference for Fujian Rongtai Weixing Automobile Industry Co., Ltd.</p>
+          </button>
+          <button class="credential-card" type="button" data-modal-image="assets/img/credentials/manufacturer-code-certificate.jpg">
+            <span>02</span>
+            <img src="assets/img/credentials/manufacturer-code-certificate.jpg" alt="Automobile manufacturer code certificate" loading="lazy" decoding="async" />
+            <h3>Automobile Manufacturer Code Certificate</h3>
+            <p>Enterprise name code certificate for Fujian Rongtai Weixing Automobile Industry Co., Ltd., with RWX manufacturer code reference.</p>
+          </button>
+          <button class="credential-card" type="button" data-modal-image="assets/img/credentials/wmi-code-certificate.jpg">
+            <span>03</span>
+            <img src="assets/img/credentials/wmi-code-certificate.jpg" alt="World manufacturer identifier code certificate" loading="lazy" decoding="async" />
+            <h3>World Manufacturer Identifier Code</h3>
+            <p>WMI certificate showing LA9/RWX code reference and vehicle type scope for compliant manufacturer identification.</p>
+          </button>
+          <button class="credential-card" type="button" data-modal-image="assets/img/credentials/business-license.jpg">
+            <span>04</span>
+            <img src="assets/img/credentials/business-license.jpg" alt="V-Star Auto business license" loading="lazy" decoding="async" />
+            <h3>Business License</h3>
+            <p>Registered company entity and business scope reference for formal contract, settlement, and buyer due diligence.</p>
+          </button>
+          <button class="credential-card" type="button" data-modal-image="assets/img/credentials/quality-management-certificate.jpg">
+            <span>05</span>
+            <img src="assets/img/credentials/quality-management-certificate.jpg" alt="Quality management system certificate" loading="lazy" decoding="async" />
+            <h3>Quality Management System Certificate</h3>
+            <p>GB/T19001-2016 / ISO9001:2015 system certificate for commercial vehicle design, production, and sales management.</p>
+          </button>
+        </div>
+      </section>
+
+      <section class="section muted-band">
+        <div class="section-heading">
+          <p class="eyebrow">End-to-end export</p>
+          <h2>From sourcing to after-sales support.</h2>
+        </div>
+        <div class="export-flow-line">
+          <article>
+            <span aria-hidden="true"></span>
+            <h3>Source</h3>
+            <p>Direct access to stable Chinese vehicle supply and selected factory channels.</p>
+          </article>
+          <article>
+            <span aria-hidden="true"></span>
+            <h3>Contract</h3>
+            <p>Formal bilingual trade contracts and corporate settlement in multiple currencies.</p>
+          </article>
+          <article>
+            <span aria-hidden="true"></span>
+            <h3>Export</h3>
+            <p>Compliant documentation, loading coordination, and port-side delivery support.</p>
+          </article>
+          <article>
+            <span aria-hidden="true"></span>
+            <h3>Support</h3>
+            <p>Multilingual response, parts support, technical guidance, and warranty coordination.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading news-showcase-heading">
+          <p class="eyebrow">Recent activity</p>
+          <h2 data-home-activity-title>Visible operations, active global relationships.</h2>
+        </div>
+        <div class="news-carousel" data-news-carousel>
+          <button class="news-carousel-button news-carousel-prev" type="button" aria-label="Previous news" data-news-prev><span aria-hidden="true">&lsaquo;</span></button>
+          <div class="news-strip" data-home-activity-cards aria-live="polite">
+            <article class="news-card-featured">
+              <a class="news-card-link" href="news-venezuelan-business-delegation.html">
+                <img src="assets/img/news/venezuelan-delegation/cover.jpg" alt="Venezuelan business delegation group photo at V-Star Auto" loading="lazy" decoding="async" />
+                <div class="news-card-body">
+                  <p class="eyebrow">Industrial inspection / International exchange</p>
+                  <h3>Venezuelan delegation visits V-Star.</h3>
+                  <p>Company inspection, vehicle review, and cooperation exchange.</p>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a class="news-card-link" href="news.html">
+                <img src="assets/img/expo-booth.jpg" alt="V-Star Auto exhibition booth" loading="lazy" decoding="async" />
+                <div class="news-card-body">
+                  <p class="eyebrow">Exhibition / Channel development</p>
+                  <h3>Domestic automotive exhibitions and industry presence.</h3>
+                  <p>Long-term channel contact and market activity records.</p>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a class="news-card-link" href="news.html">
+                <img src="assets/img/client-visit.jpg" alt="International clients visiting V-Star Auto factory" loading="lazy" decoding="async" />
+                <div class="news-card-body">
+                  <p class="eyebrow">Client visit / On-site inspection</p>
+                  <h3>International clients visit bases for vehicle inspection.</h3>
+                  <p>Factory visits support order review and cooperation talks.</p>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a class="news-card-link" href="news.html">
+                <img src="assets/img/press-event.jpg" alt="V-Star Auto cooperation event" loading="lazy" decoding="async" />
+                <div class="news-card-body">
+                  <p class="eyebrow">Cooperation / Supply capability</p>
+                  <h3>Strategic cooperation supports larger sourcing demand.</h3>
+                  <p>Business execution materials for buyer confidence.</p>
+                </div>
+              </a>
+            </article>
+          </div>
+          <button class="news-carousel-button news-carousel-next" type="button" aria-label="Next news" data-news-next><span aria-hidden="true">&rsaquo;</span></button>
+        </div>
+        <div class="news-showcase-footer">
+          <a class="button" href="news.html">View news</a>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p class="eyebrow">Ready to source vehicles from China?</p>
+        <h2>Send your target model, quantity, and destination country.</h2>
+        <div class="hero-actions">
+          <a class="button button-light" href="contact.html">Send Inquiry</a>
+          <a class="button button-ghost" href="https://wa.me/8613852965434">WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="image-modal" data-modal hidden>
+      <button type="button" class="modal-close" aria-label="Close certificate view" data-modal-close>Close</button>
+      <img src="assets/img/credentials/manufacturer-code-certificate.jpg" alt="V-Star Auto credential document" data-modal-img loading="lazy" decoding="async" />
+    </div>
+
+    <footer class="site-footer">
+      <div>
+        <strong>V-Star Auto</strong>
+        <p>Fujian Rontai V-Star Automobile Industry Co., Ltd.</p>
+      </div>
+      <div>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="services.html">Export Services</a>
+        <a href="port-logistics.html">Port Logistics</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>&copy; 2026 V-Star Auto. All rights reserved.</p>
+    </footer>
+
+    <a class="float-whatsapp" href="https://wa.me/8613852965434" aria-label="Contact V-Star Auto on WhatsApp">WA</a>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/js/vehicle-data.js"></script>
+    <script src="assets/js/content-defaults.js"></script>
+    <script src="assets/js/content-overrides.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+

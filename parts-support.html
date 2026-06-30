@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parts Support | V-Star Auto</title>
+    <meta name="description" content="Search common damaged spare parts, reference inventory, and indicative export prices for V-Star Auto website models." />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="parts-support">
+    <header class="site-header solid" data-header>
+      <a class="brand" href="index.html" aria-label="V-Star Auto home"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">V-Star Auto</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a><a href="vehicles.html">Vehicles</a><a href="services.html">Export Services</a><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <img src="assets/img/factory-vehicles.jpg" alt="Vehicle parts and stock support" loading="eager" decoding="async" fetchpriority="high" />
+        <div>
+          <p class="eyebrow">Parts support</p>
+          <h1>Search common damaged-part stock for current website models.</h1>
+          <p>Reference inventory and indicative export prices help buyers estimate after-sales parts needs before confirming a service order.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading spread">
+          <div>
+            <p class="eyebrow">Parts library</p>
+            <h2>Common damaged parts and reference prices.</h2>
+          </div>
+          <p>Final price, package weight, compatibility, and delivery timing must be confirmed by VIN, destination country, and current supplier stock.</p>
+        </div>
+
+        <div class="parts-toolbar" data-parts-library>
+          <input type="search" placeholder="Search model or part" aria-label="Search model or part" data-parts-search />
+          <select aria-label="Filter by model" data-parts-model>
+            <option value="all">All models</option>
+          </select>
+          <select aria-label="Filter by category" data-parts-category>
+            <option value="all">All categories</option>
+          </select>
+        </div>
+
+        <div class="parts-table-wrap">
+          <table class="parts-table">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Common damaged part</th>
+                <th>Category</th>
+                <th>Reference stock</th>
+                <th>Indicative price</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody data-parts-table></tbody>
+          </table>
+          <p class="form-message" data-parts-empty hidden>No matching parts found. Send the model and VIN to confirm availability.</p>
+        </div>
+      </section>
+
+      <section class="section muted-band">
+        <div class="section-heading">
+          <p class="eyebrow">Order confirmation</p>
+          <h2>Parts support is handled as a controlled export order.</h2>
+        </div>
+        <div class="process-grid">
+          <article><span>01</span><h3>VIN check</h3><p>Confirm part compatibility by VIN, trim, market version, and photos of the damaged component.</p></article>
+          <article><span>02</span><h3>Stock check</h3><p>Confirm actual inventory, supplier batch, package dimensions, and dispatch timing before payment.</p></article>
+          <article><span>03</span><h3>Quotation</h3><p>Provide part price, freight estimate, payment terms, customs document needs, and expected delivery route.</p></article>
+          <article><span>04</span><h3>Shipment</h3><p>Arrange export packaging, tracking reference, and follow-up until buyer receives the part.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div><strong>V-Star Auto</strong><p>Fujian Rontai V-Star Automobile Industry Co., Ltd.</p></div><div><a href="vehicles.html">Vehicles</a><a href="services.html">Export Services</a><a href="port-logistics.html">Port Logistics</a><a href="contact.html">Contact</a></div><p>&copy; 2026 V-Star Auto. All rights reserved.</p></footer>
+    <a class="float-whatsapp" href="https://wa.me/8613852965434" aria-label="Contact V-Star Auto on WhatsApp">WA</a>
+    <script src="assets/js/parts-data.js"></script>
+    <script src="assets/js/content-defaults.js"></script>
+    <script src="assets/js/content-overrides.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+

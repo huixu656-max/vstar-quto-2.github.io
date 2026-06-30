@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>唯星汽车网站后台</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/admin.css" />
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <aside class="admin-sidebar">
+        <div>
+          <p class="eyebrow">本地编辑后台</p>
+          <h1>唯星汽车网站后台</h1>
+          <p>这里用于日常修改网站文字、图片和车型资料。普通保存用于当前浏览器预览；确认后可在导入 / 导出里生成默认配置，让无痕模式和正式上线读取同一套内容。</p>
+        </div>
+        <nav class="admin-tabs" aria-label="后台栏目">
+          <button class="is-active" type="button" data-admin-tab="pages">页面图文</button>
+          <button type="button" data-admin-tab="vehicles">车型资料</button>
+          <button type="button" data-admin-tab="settings">网站设置</button>
+          <button type="button" data-admin-tab="data">导入 / 导出</button>
+        </nav>
+        <div class="admin-actions">
+          <a class="button button-dark" href="index.html" target="_blank" rel="noopener">打开网站首页</a>
+          <button class="button button-outline" type="button" data-reset-all>清空本机修改</button>
+        </div>
+        <div class="admin-help">
+          <h3>图片在哪里改？</h3>
+          <p>首页轮播图：页面图文 > 首页 > 首页 Banner 轮播图片列表。这里可以新增、删除、选择图片库或上传本地图片。</p>
+          <p>二级页面顶部背景图：页面图文 > 选择对应页面 > 顶部背景图（页面 Banner 图）。</p>
+          <p>车型卡片图：车型资料 > 选择车型 > 车型卡片 / 详情页主图。</p>
+          <p>车型详情大图：车型资料 > 详情页 Banner 图片 JSON。</p>
+          <p>图片文件一般放在 <strong>assets/img</strong>，车型图在 <strong>assets/img/vehicles</strong>。完整修改路径看 <strong>CONTENT_EDITING_PATHS.md</strong> 和 <strong>CONTENT_INVENTORY.md</strong>。</p>
+        </div>
+      </aside>
+
+      <section class="admin-panel is-active" data-admin-panel="pages">
+        <div class="admin-panel-heading">
+          <div>
+            <p class="eyebrow">页面文字与图片</p>
+            <h2>修改常用页面内容。</h2>
+          </div>
+          <div class="admin-select-row">
+            <label>
+              页面
+              <select data-page-select></select>
+            </label>
+            <a class="button button-dark" href="index.html" target="_blank" rel="noopener" data-page-preview>预览页面</a>
+          </div>
+        </div>
+        <form class="admin-form" data-page-form></form>
+      </section>
+
+      <section class="admin-panel" data-admin-panel="vehicles">
+        <div class="admin-panel-heading">
+          <div>
+            <p class="eyebrow">车型资料库</p>
+            <h2>修改车型卡片和详情页。</h2>
+          </div>
+          <div class="admin-select-row">
+            <label>
+              车型
+              <select data-vehicle-select></select>
+            </label>
+            <a class="button button-dark" href="vehicles.html" target="_blank" rel="noopener" data-vehicle-preview>预览车型</a>
+          </div>
+        </div>
+        <form class="admin-form" data-vehicle-form></form>
+      </section>
+
+      <section class="admin-panel" data-admin-panel="settings">
+        <div class="admin-panel-heading">
+          <div>
+            <p class="eyebrow">网站设置</p>
+            <h2>查看首页 Banner 切换方式等全站行为。</h2>
+          </div>
+        </div>
+        <div class="admin-form">
+          <div class="admin-field">
+            <label>首页 Banner 已改为左右按钮手动切换</label>
+            <small>图片列表仍在“页面图文 > 首页 > 首页 Banner 轮播图片列表”里新增、删除、选择或上传。</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="admin-panel" data-admin-panel="data">
+        <div class="admin-panel-heading">
+          <div>
+          <p class="eyebrow">备份与交接</p>
+            <h2>导入、导出或固化为默认内容。</h2>
+          </div>
+        </div>
+        <div class="admin-data-grid">
+          <article>
+            <h3>固化为默认根图片</h3>
+            <p>把当前后台内容生成网站默认配置，并把后台上传的本地图片写入 assets/img/admin/published/。无痕模式、首次访问和正式上线都会读取这份默认内容。</p>
+            <button class="button button-dark" type="button" data-download-defaults-js>下载 content-defaults.js</button>
+            <button class="button button-outline" type="button" data-export-defaults-bundle>下载默认内容固化包</button>
+            <button class="button button-outline" type="button" data-write-defaults-js>固化为默认根图片</button>
+            <small data-defaults-js-status>后台上传的本地图片会被写入 assets/img/admin/published/，默认配置会自动改成根图片路径。</small>
+          </article>
+          <article>
+            <h3>导出本机覆盖 JSON</h3>
+            <p>这份 JSON 只用于恢复当前浏览器编辑状态，不能作为无痕模式默认内容。</p>
+            <button class="button button-dark" type="button" data-export-json>下载 JSON</button>
+          </article>
+          <article>
+            <h3>导入 JSON</h3>
+            <p>粘贴之前导出的 JSON，可以恢复本机编辑状态。</p>
+            <textarea data-import-json placeholder='{"version":1,"fields":{},"vehicles":{}}'></textarea>
+            <button class="button button-dark" type="button" data-import-json-button>导入粘贴内容</button>
+          </article>
+        </div>
+        <pre class="admin-json-preview" data-json-preview></pre>
+      </section>
+    </main>
+
+    <div class="admin-toast" data-admin-toast hidden>已保存</div>
+    <script src="assets/js/vehicle-data.js"></script>
+    <script src="assets/js/image-library.js"></script>
+    <script src="assets/js/content-defaults.js"></script>
+    <script src="assets/js/content-overrides.js"></script>
+    <script src="assets/js/admin.js"></script>
+  </body>
+</html>

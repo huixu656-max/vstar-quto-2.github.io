@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>After-sales Support | V-Star Auto</title>
+    <meta name="description" content="V-Star Auto export after-sales workflow from customer contact to evidence review, solution approval, parts dispatch, and case closure." />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="after-sales">
+    <header class="site-header solid" data-header>
+      <a class="brand" href="index.html" aria-label="V-Star Auto home"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">V-Star Auto</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a><a href="vehicles.html">Vehicles</a><a href="services.html">Export Services</a><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <img src="assets/img/inspection.jpg" alt="Vehicle inspection and after-sales case review" loading="eager" decoding="async" fetchpriority="high" />
+        <div>
+          <p class="eyebrow">After-sales support</p>
+          <h1>Export after-sales workflow from first contact to case closure.</h1>
+          <p>Built for overseas dealers, importers, and fleet buyers who need a clear path for vehicle issues after shipment.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Case flow</p>
+          <h2>A practical service path for exported vehicles.</h2>
+          <p>Each case starts with buyer contact and is routed to technical diagnosis, parts supply, warranty coordination, or commercial settlement according to the order agreement.</p>
+        </div>
+        <div class="case-flow-board" data-case-flow>
+          <div class="case-flow-steps" role="tablist" aria-label="After-sales case flow">
+            <button class="case-flow-step is-active" type="button" role="tab" id="case-tab-01" aria-controls="case-panel-01" aria-selected="true" data-flow-step="case-panel-01"><span>01</span><strong>Customer contact</strong><small>Open case</small></button>
+            <button class="case-flow-step" type="button" role="tab" id="case-tab-02" aria-controls="case-panel-02" aria-selected="false" data-flow-step="case-panel-02"><span>02</span><strong>Case registration</strong><small>Order file</small></button>
+            <button class="case-flow-step" type="button" role="tab" id="case-tab-03" aria-controls="case-panel-03" aria-selected="false" data-flow-step="case-panel-03"><span>03</span><strong>Evidence collection</strong><small>Proof pack</small></button>
+            <button class="case-flow-step" type="button" role="tab" id="case-tab-04" aria-controls="case-panel-04" aria-selected="false" data-flow-step="case-panel-04"><span>04</span><strong>Technical triage</strong><small>Route case</small></button>
+            <button class="case-flow-step" type="button" role="tab" id="case-tab-05" aria-controls="case-panel-05" aria-selected="false" data-flow-step="case-panel-05"><span>05</span><strong>Solution confirmation</strong><small>Buyer approval</small></button>
+            <button class="case-flow-step" type="button" role="tab" id="case-tab-06" aria-controls="case-panel-06" aria-selected="false" data-flow-step="case-panel-06"><span>06</span><strong>Parts and logistics</strong><small>Dispatch plan</small></button>
+            <button class="case-flow-step" type="button" role="tab" id="case-tab-07" aria-controls="case-panel-07" aria-selected="false" data-flow-step="case-panel-07"><span>07</span><strong>Repair follow-up</strong><small>Result check</small></button>
+            <button class="case-flow-step" type="button" role="tab" id="case-tab-08" aria-controls="case-panel-08" aria-selected="false" data-flow-step="case-panel-08"><span>08</span><strong>Case closure</strong><small>Record result</small></button>
+          </div>
+          <div class="case-flow-detail">
+            <div class="case-flow-progress" aria-hidden="true"><span data-flow-progress></span></div>
+            <article class="case-flow-panel is-active" id="case-panel-01" role="tabpanel" aria-labelledby="case-tab-01" data-flow-panel>
+              <p class="eyebrow">Step 01 / Intake</p>
+              <h3>Customer contact</h3>
+              <p>Buyer contacts V-Star by WhatsApp, phone, or email and provides order number, vehicle model, VIN, location, and issue summary.</p>
+              <div class="case-flow-output"><div><span>Buyer sends</span><strong>Order number, model, VIN, location, issue summary</strong></div><div><span>Output</span><strong>Initial case record and responsible contact</strong></div></div>
+              <figure class="case-flow-visual">
+                <img src="assets/img/after-sales/case-flow-01-contact.jpg" alt="Buyer communication and service contact" loading="lazy" decoding="async" />
+                <figcaption>Buyer communication starts the service file.</figcaption>
+              </figure>
+            </article>
+            <article class="case-flow-panel" id="case-panel-02" role="tabpanel" aria-labelledby="case-tab-02" data-flow-panel hidden>
+              <p class="eyebrow">Step 02 / Registration</p>
+              <h3>Case registration</h3>
+              <p>V-Star records the case and checks order status, warranty notes, shipment terms, responsible contacts, and destination market details.</p>
+              <div class="case-flow-output"><div><span>V-Star checks</span><strong>Contract file, invoice, shipment record, warranty note</strong></div><div><span>Output</span><strong>Case route and response priority</strong></div></div>
+              <figure class="case-flow-visual">
+                <img src="assets/img/after-sales/case-flow-02-registration.jpg" alt="Order and service record review" loading="lazy" decoding="async" />
+                <figcaption>Order records are checked before routing.</figcaption>
+              </figure>
+            </article>
+            <article class="case-flow-panel" id="case-panel-03" role="tabpanel" aria-labelledby="case-tab-03" data-flow-panel hidden>
+              <p class="eyebrow">Step 03 / Evidence</p>
+              <h3>Evidence collection</h3>
+              <p>Buyer submits photos, videos, diagnostic codes, mileage, maintenance records, and workshop comments before disassembly when possible.</p>
+              <div class="case-flow-output"><div><span>Required proof</span><strong>Photos, video, fault code, mileage, local workshop notes</strong></div><div><span>Output</span><strong>Complete evidence pack for supplier or warranty review</strong></div></div>
+              <figure class="case-flow-visual">
+                <img src="assets/img/after-sales/case-flow-03-evidence.jpg" alt="Vehicle inspection evidence collection" loading="lazy" decoding="async" />
+                <figcaption>Photos and inspection notes support review.</figcaption>
+              </figure>
+            </article>
+            <article class="case-flow-panel" id="case-panel-04" role="tabpanel" aria-labelledby="case-tab-04" data-flow-panel hidden>
+              <p class="eyebrow">Step 04 / Diagnosis</p>
+              <h3>Technical triage</h3>
+              <p>The case is classified as operation guidance, consumable part replacement, shipping damage, warranty assessment, or non-warranty repair support.</p>
+              <div class="case-flow-output"><div><span>Decision route</span><strong>Guidance, parts, warranty, supplier feedback, or local repair</strong></div><div><span>Output</span><strong>Recommended handling path</strong></div></div>
+              <figure class="case-flow-visual">
+                <img src="assets/img/after-sales/case-flow-04-triage.jpg" alt="Technical inspection and issue classification" loading="lazy" decoding="async" />
+                <figcaption>Technical checks classify the support route.</figcaption>
+              </figure>
+            </article>
+            <article class="case-flow-panel" id="case-panel-05" role="tabpanel" aria-labelledby="case-tab-05" data-flow-panel hidden>
+              <p class="eyebrow">Step 05 / Approval</p>
+              <h3>Solution confirmation</h3>
+              <p>V-Star confirms the support route with the buyer before repair cost, replacement parts, or supplier feedback work continues.</p>
+              <div class="case-flow-output"><div><span>Buyer confirms</span><strong>Preferred route, cost responsibility, timing, destination contact</strong></div><div><span>Output</span><strong>Approved service action</strong></div></div>
+              <figure class="case-flow-visual">
+                <img src="assets/img/after-sales/case-flow-05-approval.jpg" alt="Buyer service solution confirmation meeting" loading="lazy" decoding="async" />
+                <figcaption>Confirmed actions keep cost and timing clear.</figcaption>
+              </figure>
+            </article>
+            <article class="case-flow-panel" id="case-panel-06" role="tabpanel" aria-labelledby="case-tab-06" data-flow-panel hidden>
+              <p class="eyebrow">Step 06 / Supply</p>
+              <h3>Parts and logistics</h3>
+              <p>For approved parts, V-Star checks inventory, price, package weight, freight option, export documents, and dispatch timing.</p>
+              <div class="case-flow-output"><div><span>V-Star prepares</span><strong>Stock check, quotation, packing data, freight reference</strong></div><div><span>Output</span><strong>Parts dispatch plan and logistics update</strong></div></div>
+              <figure class="case-flow-visual">
+                <img src="assets/img/after-sales/case-flow-06-logistics.jpg" alt="Parts dispatch and port logistics route" loading="lazy" decoding="async" />
+                <figcaption>Parts support is tied to freight and port updates.</figcaption>
+              </figure>
+            </article>
+            <article class="case-flow-panel" id="case-panel-07" role="tabpanel" aria-labelledby="case-tab-07" data-flow-panel hidden>
+              <p class="eyebrow">Step 07 / Follow-up</p>
+              <h3>Repair follow-up</h3>
+              <p>Buyer reports installation result, repair photos, test result, and any remaining symptoms so the case can be adjusted if needed.</p>
+              <div class="case-flow-output"><div><span>Buyer returns</span><strong>Installation photos, test drive result, remaining symptoms</strong></div><div><span>Output</span><strong>Confirmed repair result or adjusted plan</strong></div></div>
+              <figure class="case-flow-visual">
+                <img src="assets/img/after-sales/case-flow-07-follow-up.jpg" alt="Vehicle repair result and follow-up check" loading="lazy" decoding="async" />
+                <figcaption>Follow-up evidence confirms the repair result.</figcaption>
+              </figure>
+            </article>
+            <article class="case-flow-panel" id="case-panel-08" role="tabpanel" aria-labelledby="case-tab-08" data-flow-panel hidden>
+              <p class="eyebrow">Step 08 / Closure</p>
+              <h3>Case closure</h3>
+              <p>V-Star records the final result, keeps evidence for future claims, and updates product or supplier feedback when repeated issues appear.</p>
+              <div class="case-flow-output"><div><span>Record kept</span><strong>Final cause, solution, evidence, supplier feedback</strong></div><div><span>Output</span><strong>Closed case archive and repeat-issue note</strong></div></div>
+              <figure class="case-flow-visual">
+                <img src="assets/img/after-sales/case-flow-08-closure.jpg" alt="Closed service case archive documents" loading="lazy" decoding="async" />
+                <figcaption>Closed cases remain traceable for later review.</figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-band">
+        <div class="section-heading">
+          <p class="eyebrow">Buyer evidence checklist</p>
+          <h2>Complete evidence makes export after-sales faster.</h2>
+        </div>
+        <div class="process-grid">
+          <article><span>A</span><h3>Order proof</h3><p>Contract, invoice, delivery note, VIN, vehicle model, trim, and destination country.</p></article>
+          <article><span>B</span><h3>Issue proof</h3><p>Clear photos, video, dashboard warning, diagnostic report, and mileage at issue discovery.</p></article>
+          <article><span>C</span><h3>Repair proof</h3><p>Local workshop inspection comments, replaced part photos, maintenance records, and test result.</p></article>
+          <article><span>D</span><h3>Commercial proof</h3><p>Freight damage records, customs notes, and cost estimate if compensation or part shipment is requested.</p></article>
+        </div>
+      </section>
+
+      <section class="split-section">
+        <div class="split-media"><img src="assets/img/after-sales/case-flow-01-contact.jpg" alt="After-sales service case contact reference" loading="lazy" decoding="async" /></div>
+        <div class="split-copy">
+          <p class="eyebrow">Next step</p>
+          <h2>Start with a clear service case.</h2>
+          <p>Send the order number, VIN, and issue evidence first. V-Star will confirm whether the case should move to technical guidance, parts support, or warranty coordination.</p>
+          <div class="map-actions">
+            <a class="button button-dark" href="technical-guidance.html">Contact technical support</a>
+            <a class="button button-ghost" href="parts-support.html">Search parts stock</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div><strong>V-Star Auto</strong><p>Fujian Rontai V-Star Automobile Industry Co., Ltd.</p></div><div><a href="vehicles.html">Vehicles</a><a href="services.html">Export Services</a><a href="port-logistics.html">Port Logistics</a><a href="contact.html">Contact</a></div><p>&copy; 2026 V-Star Auto. All rights reserved.</p></footer>
+    <a class="float-whatsapp" href="https://wa.me/8613852965434" aria-label="Contact V-Star Auto on WhatsApp">WA</a>
+    <script src="assets/js/content-defaults.js"></script>
+    <script src="assets/js/content-overrides.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
